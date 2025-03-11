@@ -103,26 +103,26 @@ const Calc: React.FC = () => {
         <button className="bg-dark-gray" onClick={clearCalculator}>C</button>
         <button className="bg-dark-gray" onClick={() => setCurrentNumber((prev) => (parseFloat(prev) * -1).toString())}>±</button>
         <button className="bg-dark-gray" onClick={setPercentage}>%</button>
-        <button className="bg-orange" onClick={() => handleOperator("÷")}>÷</button>
+        <button className="bg-blue" onClick={() => handleOperator("÷")}>÷</button>
 
         {["7", "8", "9"].map((num) => (
           <button key={num} className="bg-gray" onClick={() => addDigit(num)}>{num}</button>
         ))}
-        <button className="bg-orange" onClick={() => handleOperator("x")}>x</button>
+        <button className="bg-blue" onClick={() => handleOperator("x")}>x</button>
 
         {["4", "5", "6"].map((num) => (
           <button key={num} className="bg-gray" onClick={() => addDigit(num)}>{num}</button>
         ))}
-        <button className="bg-orange" onClick={() => handleOperator("-")}>-</button>
+        <button className="bg-blue" onClick={() => handleOperator("-")}>-</button>
 
         {["1", "2", "3"].map((num) => (
           <button key={num} className="bg-gray" onClick={() => addDigit(num)}>{num}</button>
         ))}
-        <button className="bg-orange" onClick={() => handleOperator("+")}>+</button>
+        <button className="bg-blue" onClick={() => handleOperator("+")}>+</button>
 
         <button className="bg-gray button-zero" onClick={() => addDigit("0")}>0</button>
         <button className="bg-gray" onClick={() => addDigit(",")}>,</button>
-        <button className="bg-orange" onClick={calculate}>=</button>
+        <button className="igl" onClick={calculate}>=</button>
       </div>
     </div>
   );

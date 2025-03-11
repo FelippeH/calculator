@@ -15,7 +15,7 @@ body {
 
 .calculator {
     width: 480px;
-    background-color: #464646;
+    background-color: #4e4e4e;
     border-radius: 22px;
     overflow: hidden;
     align-items: center;
@@ -55,16 +55,20 @@ body {
 }
 
 .bg-dark-gray {
-    background-color: #585858;
+    background-color: #616161;
 }
 
 .bg-gray {
-    background-color: #747474;
+    background-color: #757575;
 }
 button:active {
     opacity: 0.9;
 }
 
-.bg-orange {
-    background-color: #f2a43b;
+.bg-blue {
+    background-color: #4898f5;
+}
+
+.igl {
+    background-color: #3d81cf; 
 }
